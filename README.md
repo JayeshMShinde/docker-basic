@@ -244,6 +244,16 @@ docker-compose up --build
 
 This command builds the images (if they don't exist) and starts the containers.
 
+## Best Practices
+
+1. Use official base images when possible
+2. Keep images small by using multi-stage builds and `.dockerignore`
+3. Don't run containers as root
+4. Use environment variables for configuration
+5. Tag your images with meaningful versions
+6. Use Docker Compose for complex applications
+7. Implement health checks in your Dockerfiles
+8. 
 ## Conclusion
 
 Docker provides a powerful tool for both frontend and backend development, offering consistency, isolation, and ease of deployment. By containerizing your applications, you can ensure that they run the same way in development, testing, and production environments.
