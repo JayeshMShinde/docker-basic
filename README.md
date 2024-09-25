@@ -255,6 +255,33 @@ This command builds the images (if they don't exist) and starts the containers.
 7. Implement health checks in your Dockerfiles
 
 
+| Command | Description |
+|---------|-------------|
+| `docker build -t <image-name> .` | Build a Docker image from a Dockerfile in the current directory |
+| `docker run <image-name>` | Create and start a new container from an image |
+| `docker run -p <host-port>:<container-port> <image-name>` | Run a container and map a host port to a container port |
+| `docker ps` | List running containers |
+| `docker ps -a` | List all containers (running and stopped) |
+| `docker stop <container-id>` | Stop a running container |
+| `docker start <container-id>` | Start a stopped container |
+| `docker restart <container-id>` | Restart a container |
+| `docker rm <container-id>` | Remove a stopped container |
+| `docker rmi <image-id>` | Remove a Docker image |
+| `docker images` | List all locally stored Docker images |
+| `docker pull <image-name>` | Pull an image from a Docker registry (e.g., Docker Hub) |
+| `docker push <image-name>` | Push an image to a Docker registry |
+| `docker exec -it <container-id> /bin/bash` | Open an interactive shell inside a running container |
+| `docker logs <container-id>` | View the logs of a container |
+| `docker-compose up` | Create and start containers defined in docker-compose.yml |
+| `docker-compose down` | Stop and remove containers, networks, and volumes defined in docker-compose.yml |
+| `docker-compose build` | Build or rebuild services defined in docker-compose.yml |
+| `docker volume create <volume-name>` | Create a named volume |
+| `docker volume ls` | List volumes |
+| `docker network create <network-name>` | Create a user-defined network |
+| `docker network ls` | List networks |
+
+These commands cover most of the common operations you'll perform when working with Docker. Remember to replace `<image-name>`, `<container-id>`, `<volume-name>`, and `<network-name>` with actual values when using these commands.
+
 ## Conclusion
 
 Docker provides a powerful tool for both frontend and backend development, offering consistency, isolation, and ease of deployment. By containerizing your applications, you can ensure that they run the same way in development, testing, and production environments.
