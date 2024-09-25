@@ -1,7 +1,5 @@
 # Docker Guide for Frontend and Backend Development
 
-#Docker #WebDevelopment #DevOps #Containerization #Frontend #Backend #React #NextJS #Django #SpringBoot
-
 ## Table of Contents
 - [Introduction to Docker](#introduction-to-docker)
 - [Docker in Frontend Development](#docker-in-frontend-development)
